@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CleanConnect - Sanitation Portal</title>
+  <meta charset="UTF-8">
+  <title>CleanConnect - Hygiene Portal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>CleanConnect</h1>
-    <p>Sanitation & Hygiene Complaint System</p>
-  </header>
+<header>
+  <h1>CleanConnect</h1>
+  <p>Sanitation & Hygiene Complaint System</p>
+</header>
 
-  <section class="box">
+<div class="container">
+
+  <!-- COMPLAINT FORM -->
+  <div class="card">
 
     <h2>Raise Complaint</h2>
 
     <input type="text" id="title" placeholder="Complaint Title">
-    <input type="text" id="location" placeholder="Location">
+    <input type="text" id="location" placeholder="Location (Washroom / Block)">
     <textarea id="desc" placeholder="Describe the issue"></textarea>
 
     <button onclick="addComplaint()">Submit Complaint</button>
 
-  </section>
+  </div>
 
-  <section class="box">
+  <!-- DO'S & DON'TS -->
+  <div class="card">
+
+    <h2>Hygiene Guidelines</h2>
+
+    <h3>✔ Do's</h3>
+    <ul>
+      <li>Keep washroom clean</li>
+      <li>Use dustbin properly</li>
+      <li>Report issues immediately</li>
+      <li>Wash hands after use</li>
+    </ul>
+
+    <h3>✖ Don'ts</h3>
+    <ul>
+      <li>Do not waste water</li>
+      <li>Do not damage property</li>
+      <li>Do not throw waste on floor</li>
+    </ul>
+
+  </div>
+
+  <!-- COMPLAINT LIST -->
+  <div class="card">
 
     <h2>Complaints List</h2>
-
     <ul id="list"></ul>
 
-  </section>
+  </div>
 
-  <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
